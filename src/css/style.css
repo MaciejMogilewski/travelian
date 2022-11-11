@@ -707,4 +707,104 @@ html, body {
   text-transform: uppercase;
 }
 
+html, body {
+  font-size: 16px;
+}
+
+.blog {
+  min-height: 100vh;
+  padding: 8.75rem 11.375rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.title2 {
+  max-width: 97.25rem;
+  width: 100%;
+  margin-bottom: 6.25rem;
+}
+.title2__hdl {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 1.32;
+  color: #172432;
+  position: relative;
+  margin: 0;
+}
+.title2__hdl::before {
+  content: "";
+  position: absolute;
+  background-color: #FF7757;
+  width: 9.375rem;
+  height: 0.1875rem;
+  bottom: -1.25rem;
+}
+.title2__text {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.16;
+  color: #767E86;
+  margin-top: 3.25rem;
+  margin-bottom: 0;
+}
+
+.blog-content {
+  width: 100%;
+  max-width: 97.25rem;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.blog-text-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 6.65625rem 0 6.625rem 2rem;
+  box-sizing: border-box;
+}
+.blog-text-block__hdl {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 3.375rem;
+  line-height: 1.33;
+  color: #172432;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+.blog-text-block__text {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.16;
+  color: #172432;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+.blog-text-block__btn {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.16;
+  color: #FF7757;
+  background: none;
+  border: 0;
+  position: relative;
+}
+.blog-text-block__btn::after {
+  content: "";
+  position: absolute;
+  background-image: url("../images/blog_arrow.svg");
+  width: 1.6875rem;
+  height: 0.9375rem;
+  left: 8.625rem;
+  bottom: 1.125rem;
+}
+
 /*# sourceMappingURL=style.css.map */

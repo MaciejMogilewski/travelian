@@ -1,0 +1,105 @@
+@import "variables";
+@import "helpers";
+
+.blog {
+    min-height: 100vh;
+    padding: toRem(140px) toRem(182px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.title2 {
+    max-width: toRem(1556px);
+    width: 100%;
+    margin-bottom: toRem(100px);
+
+    &__hdl {
+        font-family: "Playfair Display", serif;
+        font-weight: 400;
+        font-size: toRem(64px);
+        line-height: 1.32;
+        color: $input-font-color;
+        position: relative;
+        margin: 0;
+
+        &::before {
+            content: '';
+            position: absolute;
+            background-color: $primary-color;
+            width: toRem(150px);
+            height: toRem(3px);
+            bottom: toRem(-20px);
+        }
+    }
+
+    &__text {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
+        font-size: toRem(24px);
+        line-height: 1.16;
+        color: $secondary-font-color;
+        margin-top: toRem(52px);
+        margin-bottom: 0;
+    }
+}
+
+.blog-content {
+    width: 100%;
+    max-width: toRem(1556px);
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.blog-text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: toRem(106.5px) 0 toRem(106px) toRem(32px);
+    box-sizing: border-box;
+
+
+    &__hdl {
+        font-family: "Playfair Display", serif;
+        font-weight: 400;
+        font-size: toRem(54px);
+        line-height: 1.33;
+        color: $input-font-color;
+        margin-top: 0;
+        margin-bottom: toRem(24px);
+    }
+
+    &__text {
+        font-family: "Rubik", sans-serif;
+        font-weight: 400;
+        font-size: toRem(24px);
+        line-height: 2.16;
+        color: $input-font-color;
+        margin-top: 0;
+        margin-bottom: toRem(24px);
+    }
+
+    &__btn {
+        font-family: "Rubik", sans-serif;
+        font-weight: 400;
+        font-size: toRem(24px);
+        line-height: 2.16;
+        color: $primary-color;
+        background: none;
+        border: 0;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url("#{$imgs-path}/blog_arrow.svg");
+            width: toRem(27px);
+            height: toRem(15px);
+            left: toRem(138px);
+            bottom: toRem(18px);
+        }
+    }
+}
