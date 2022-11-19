@@ -816,7 +816,6 @@ html, body {
   padding: 8.75rem 0 8.75rem 11.375rem;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
   box-sizing: border-box;
 }
@@ -956,6 +955,71 @@ html, body {
   width: 8.5rem;
   height: 1.5rem;
   left: -0.125rem;
+}
+
+html, body {
+  font-size: 16px;
+}
+
+.gallery {
+  min-height: 100vh;
+  padding: 8.75rem 11.375rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.gallery-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 97.25rem;
+  margin-bottom: 6.25rem;
+}
+.gallery-title__hdl {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 1.32;
+  color: #172432;
+  position: relative;
+  margin: 0;
+}
+.gallery-title__hdl::before {
+  content: "";
+  position: absolute;
+  width: 17.6875rem;
+  height: 0.1875rem;
+  bottom: -1.25rem;
+  background-color: #FF7757;
+}
+.gallery-title__text {
+  font-family: "Rubik", serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.16;
+  color: #767E86;
+  margin-top: 3.25rem;
+  margin-bottom: 0;
+}
+
+.gallery-content {
+  width: 100%;
+  max-width: 97.25rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+.gallery-content__img {
+  margin-right: 2rem;
+}
+.gallery-content__img:last-child {
+  margin-right: 0;
+}
+.gallery-content__img:hover {
+  transform: translateY(-50px);
 }
 
 /*# sourceMappingURL=style.css.map */
