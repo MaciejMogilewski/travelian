@@ -1,0 +1,148 @@
+@import "variables";
+@import "helpers";
+
+.testimonial {
+    min-height: 100vh;
+    padding: toRem(140px) toRem(182px) toRem(240px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial-title {
+    width: 100%;
+    max-width: toRem(1556px);
+    margin-bottom: toRem(160px);
+
+    &__hdl {
+        font-family: 'Playfair Display', serif;
+        font-weight: 400;
+        font-size: toRem(64px);
+        line-height: 1.32;
+        color: $input-font-color;
+        position: relative;
+        margin: 0;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: toRem(347px);
+            height: toRem(3px);
+            bottom: toRem(-20px);
+            background-color: $primary-color;
+        }
+    }
+    &__text {
+        font-family: 'Rubik', serif;
+        font-weight: 400;
+        font-size: toRem(24px);
+        line-height: 1.16;
+        color: $secondary-font-color;
+        margin-top: toRem(52px);
+        margin-bottom: 0;
+    }
+}
+
+.testimonial-content {
+    width: 100%;
+    max-width: toRem(1556px);
+    margin-bottom: toRem(160px);
+    display: flex;
+    justify-content: space-between;
+}
+
+.client {
+    max-width: toRem(663px);
+    background-color: $fourth-color;
+    padding: toRem(60px) toRem(40px) toRem(40px);
+    border-radius: toRem(12px);
+    margin-right: toRem(32px);
+    box-sizing: border-box;
+
+    &__text {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
+        font-size: toRem(18px);
+        line-height: 1.27;
+        color: $secondary-font-color;
+        margin-top: 0;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url("#{$imgs-path}/Rating.svg");
+            width: toRem(136px);
+            height: toRem(24px);
+            bottom: toRem(-38px);
+        }
+    }
+
+    &__text-avatar1 {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: toRem(100px);
+            height: toRem(100px);
+            top: toRem(-120px);
+            background-image: url("#{$imgs-path}/avatar1.jpg");
+            left: 0;
+            border-radius: toRem(100px);
+        }
+    }
+
+    &__text-avatar2 {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: toRem(100px);
+            height: toRem(100px);
+            top: toRem(-120px);
+            background-image: url("#{$imgs-path}/avatar2.jpg");
+            left: 0;
+            border-radius: toRem(100px);
+        }
+    }
+
+    &__text-avatar3 {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: toRem(100px);
+            height: toRem(100px);
+            top: toRem(-120px);
+            background-image: url("#{$imgs-path}/avatar3.jpg");
+            left: 0;
+            border-radius: toRem(100px);
+        }
+    }
+
+    &__name {
+        font-family: 'Playfair Display', serif;
+        font-weight: 400;
+        font-size: toRem(24px);
+        line-height: 1.33;
+        color: $secondary-font-color;
+        margin-top: toRem(62px);
+        margin-bottom: 0;
+    }
+
+    &__profession {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
+        font-size: toRem(18px);
+        color: $secondary-font-color;
+        margin-top: toRem(4px);
+        margin-bottom: toRem(0px);
+    }
+}
+
+
+

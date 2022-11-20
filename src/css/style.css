@@ -1022,4 +1022,139 @@ html, body {
   transform: translateY(-50px);
 }
 
+html, body {
+  font-size: 16px;
+}
+
+.testimonial {
+  min-height: 100vh;
+  padding: 8.75rem 11.375rem 15rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial-title {
+  width: 100%;
+  max-width: 97.25rem;
+  margin-bottom: 10rem;
+}
+.testimonial-title__hdl {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 1.32;
+  color: #172432;
+  position: relative;
+  margin: 0;
+}
+.testimonial-title__hdl::before {
+  content: "";
+  position: absolute;
+  width: 21.6875rem;
+  height: 0.1875rem;
+  bottom: -1.25rem;
+  background-color: #FF7757;
+}
+.testimonial-title__text {
+  font-family: "Rubik", serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.16;
+  color: #767E86;
+  margin-top: 3.25rem;
+  margin-bottom: 0;
+}
+
+.testimonial-content {
+  width: 100%;
+  max-width: 97.25rem;
+  margin-bottom: 10rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.client {
+  max-width: 41.4375rem;
+  background-color: #F5F6F7;
+  padding: 3.75rem 2.5rem 2.5rem;
+  border-radius: 0.75rem;
+  margin-right: 2rem;
+  box-sizing: border-box;
+}
+.client__text {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.27;
+  color: #767E86;
+  margin-top: 0;
+  position: relative;
+}
+.client__text::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/Rating.svg");
+  width: 8.5rem;
+  height: 1.5rem;
+  bottom: -2.375rem;
+}
+.client__text-avatar1 {
+  position: relative;
+}
+.client__text-avatar1::after {
+  content: "";
+  position: absolute;
+  width: 6.25rem;
+  height: 6.25rem;
+  top: -7.5rem;
+  background-image: url("../images/avatar1.jpg");
+  left: 0;
+  border-radius: 6.25rem;
+}
+.client__text-avatar2 {
+  position: relative;
+}
+.client__text-avatar2::after {
+  content: "";
+  position: absolute;
+  width: 6.25rem;
+  height: 6.25rem;
+  top: -7.5rem;
+  background-image: url("../images/avatar2.jpg");
+  left: 0;
+  border-radius: 6.25rem;
+}
+.client__text-avatar3 {
+  position: relative;
+}
+.client__text-avatar3::after {
+  content: "";
+  position: absolute;
+  width: 6.25rem;
+  height: 6.25rem;
+  top: -7.5rem;
+  background-image: url("../images/avatar3.jpg");
+  left: 0;
+  border-radius: 6.25rem;
+}
+.client__name {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.33;
+  color: #767E86;
+  margin-top: 3.875rem;
+  margin-bottom: 0;
+}
+.client__profession {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: #767E86;
+  margin-top: 0.25rem;
+  margin-bottom: 0rem;
+}
+
 /*# sourceMappingURL=style.css.map */
