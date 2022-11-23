@@ -1,0 +1,114 @@
+@import "variables";
+@import "helpers";
+
+%font {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: toRem(18px);
+    line-height: 1.16;
+    text-decoration: none;
+    color: $primary-font-color;
+    margin-top: toRem(12px);
+}
+
+%font-title {
+    font-family: 'Rubik', serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    margin-top: 0;
+    margin-bottom: toRem(4px);
+    text-decoration: none;
+    color: $primary-font-color;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: $input-font-color;
+    padding: toRem(240px) toRem(182px) toRem(140px);
+    margin-top: toRem(-116px);
+}
+
+.footer-content {
+    max-width: toRem(1556px);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+
+    &__text {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
+        font-size: toRem(14px);
+        line-height: 1.21;
+        color: $primary-font-color;
+        margin-top: toRem(16px);
+        margin-bottom: 0;
+    }
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+
+    &__text {
+        @extend %font-title
+    }
+
+    &__link {
+        @extend %font
+    }
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+
+    &__text {
+        @extend %font-title
+    }
+
+    &__link {
+        @extend %font
+    }
+}
+
+.footer-information {
+    display: flex;
+    flex-direction: column;
+
+    &__text {
+        @extend %font-title
+    }
+
+    &__link {
+        @extend %font
+    }
+}
+
+.follow {
+
+    &__text {
+        @extend %font-title;
+        margin-bottom: toRem(16px);
+    }
+}
+
+.social-media {
+
+    &__img {
+        margin-right: toRem(24px);
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
