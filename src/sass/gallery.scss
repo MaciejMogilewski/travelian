@@ -1,0 +1,69 @@
+@import "variables";
+@import "helpers";
+
+.gallery {
+    min-height: 100vh;
+    padding: toRem(140px) toRem(182px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.gallery-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: toRem(1556px);
+    margin-bottom: toRem(100px);
+
+    &__hdl {
+        font-family: 'Playfair Display', serif;
+        font-weight: 400;
+        font-size: toRem(64px);
+        line-height: 1.32;
+        color: $input-font-color;
+        position: relative;
+        margin: 0;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: toRem(283px);
+            height: toRem(3px);
+            bottom: toRem(-20px);
+            background-color: $primary-color;
+        }
+    }
+
+    &__text {
+        font-family: 'Rubik', serif;
+        font-weight: 400;
+        font-size: toRem(24px);
+        line-height: 1.16;
+        color: $secondary-font-color;
+        margin-top: toRem(52px);
+        margin-bottom: 0;
+    }
+}
+
+.gallery-content {
+    width: 100%;
+    max-width: toRem(1556px);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+
+    &__img {
+        margin-right: toRem(32px);
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__img:hover {
+        transform: translateY(-50px);
+    }
+}

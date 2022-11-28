@@ -5,10 +5,310 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Travellian</title>
+
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Playfair+Display&family=Rubik&display=swap"
+          rel="stylesheet">
 </head>
 <body>
+
+<section class="intro">
+    <header class="intro__header header">
+        <a href="" class="header__logo logo">
+            <img src="./src/images/logo.svg" alt="Travellian logo" class="logo__img">
+        </a>
+        <nav class="header__menu main-menu">
+            <a href="" class="main-menu__item main-menu__item--active">Home</a>
+            <a href="" class="main-menu__item">Explore</a>
+            <a href="" class="main-menu__item">Travel</a>
+            <a href="" class="main-menu__item">Blog</a>
+            <a href="" class="main-menu__item">Pricing</a>
+        </nav>
+        <nav class="header__menu auth-menu">
+            <a href="" class="auth-menu__item">Login</a>
+            <a href="" class="auth-menu__item auth-menu__item--btn">Sign up</a>
+        </nav>
+    </header>
+
+    <div class="lead">
+        <h1 class="lead__hdl">Start your unforgettable<br> journey with us</h1>
+        <p class="lead__text">The best travel for your journey begins now</p>
+    </div>
+
+    <form action="" class="search">
+        <div class="search__wraper">
+            <div class="search__group">
+                <label for="destination" class="search__lbl">Destination</label>
+                <input type="text" id="destination" name="destination" class="search__input" placeholder="Dubai">
+            </div>
+            <div class="search__group">
+                <label for="person" class="search__lbl">Person</label>
+                <select name="person" id="person" class="search__input search__input--select">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="search__group">
+                <label for="Checkin" class="search__lbl">Check in</label>
+                <input type="date" id="Checkin" name="destination" class="search__input">
+            </div>
+            <div class="search__group">
+                <label for="Checkout" class="search__lbl">Check out</label>
+                <input type="date" id="Checkout" name="destination" class="search__input">
+            </div>
+
+            <button type="submit" class="search__btn">Book<br>now</button>
+        </div>
+    </form>
+</section>
+
+<section class="destinations">
+    <div class="desc">
+        <h2 class="desc__hdl">Popular Destinations</h2>
+        <p class="desc__text">Most popular destinations around the world, from historical places to natural wonders.</p>
+    </div>
+    <div class="content">
+        <a href="" class="content__group group">
+            <img src="./src/images/berlin.jpg" alt="" class="group__img">
+            <p class="group__text">Monument of Berlin</p>
+            <p class="group__location">Berlin, Germany</p>
+        </a>
+        <a href="" class="content__group group">
+            <img src="./src/images/london.jpg" alt="" class="group__img">
+            <p class="group__text">Millennium Bridge</p>
+            <p class="group__location">London, United Kingdom</p>
+        </a>
+        <a href="" class="content__group group">
+            <img src="./src/images/venice.jpg" alt="" class="group__img">
+            <p class="group__text">Rialto Bridge</p>
+            <p class="group__location">Venice, Italy</p>
+        </a>
+    </div>
+</section>
+
+<section class="special-offer">
+    <div class="title">
+        <h2 class="title__hd2">Special Offer</h2>
+        <p class="title__text">Check out our special offer and discounts</p>
+    </div>
+    <div class="special-content">
+        <div class="special-content__block block">
+            <img src="./src/images/lisbon.jpg" alt="block__img">
+            <div class="block__box text-block">
+                <div class="text-block desc-block">
+                    <p class="desc-block__title">Lisbon, Portugal</p>
+                    <p class="desc-block__desc">5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very
+                        popular during the renaissance. Passage and going through the cites of the world in classical
+                        literature.
+                    </p>
+                </div>
+                <div class="text-block price-block">
+                    <p class="price-block__text">From</p>
+                    <p class="price-block__price">€500</p>
+                    <button type="submit" class="price-block__btn">Details</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="special-content__block block">
+            <img src="./src/images/athens.jpg" alt="block__img">
+            <div class="block__box text-block">
+                <div class="text-block desc-block">
+                    <p class="desc-block__title">Athens, Greece</p>
+                    <p class="desc-block__desc">5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very
+                        popular during the renaissance. Passage and going through the cites of the world in classical
+                        literature.
+                    </p>
+                </div>
+                <div class="text-block price-block">
+                    <p class="price-block__text">From</p>
+                    <p class="price-block__price">€800</p>
+                    <button type="submit" class="price-block__btn">Details</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="special-content__block block">
+            <img src="./src/images/rome.jpg" alt="block__img">
+            <div class="block__box text-block">
+                <div class="text-block desc-block">
+                    <p class="desc-block__title">Rome, Italy</p>
+                    <p class="desc-block__desc">5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very
+                        popular during the renaissance. Passage and going through the cites of the world in classical
+                        literature.
+                    </p>
+                </div>
+                <div class="text-block price-block">
+                    <p class="price-block__text">From</p>
+                    <p class="price-block__price">€750</p>
+                    <button type="submit" class="price-block__btn">Details</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="blog">
+    <div class="title2">
+        <h2 class="title2__hdl">Our Blog</h2>
+        <p class="title2__text">An insight the incredible experience in the world</p>
+    </div>
+    <div class="blog-content">
+        <img src="./src/images/blog.jpg" alt="">
+        <div class="blog-text-block">
+            <h3 class="blog-text-block__hdl">Beautiful Italy Let’s travel</h3>
+            <p class="blog-text-block__text">But I must explain to you how all this mistaken idea of denouncing pleasure
+                and praising pain was born and I will give you a complete account of the system and expound the actual
+                teachings of the great explorer of the truth, the master- builder of human happiness. No one rejects,
+                dislike, or avoids plasure itself, because it is pleasure, but because those who do not know how to
+                pursue pleasure rationally encounter consequences that are extremly painful. Nor again is there anyone
+                who loves or pursues.</p>
+            <button class="blog-text-block__btn">Read more</button>
+        </div>
+    </div>
+</section>
+
+<section class="trip_planners">
+    <div class="trip_title">
+        <h2 class="trip_title__hdl">Trip Planners</h2>
+        <p class="trip_title__text">20 years from now you will be more disappointed by the things that you didn’t do.
+            Stop regretting and start travelling, start throwing off the bowlines.</p>
+        <button class="trip_title__btn">View all trip plans</button>
+    </div>
+    <div class="trip_content">
+        <img src="./src/images/planners1.jpg" alt="" class="trip_content__img">
+        <div class="container">
+            <img src="./src/images/planners2.jpg" alt="" class="container__img">
+            <div class="price">
+                <p class="price__text1">Guided tour</p>
+                <p class="price__text">€99/Day</p>
+            </div>
+            <div class="city-days">
+                <p class="city-days__city">Paris City Tour</p>
+                <p class="city-days__days">7 Days tour</p>
+            </div>
+        </div>
+        <img src="./src/images/planners3.jpg" alt="" class="trip_content__img">
+        <img src="./src/images/planners4.jpg" alt="" class="trip_content__img">
+    </div>
+</section>
+
+<section class="gallery">
+    <div class="gallery-title">
+        <h2 class="gallery-title__hdl">Destination Gallery</h2>
+        <p class="gallery-title__text">Our photo gallery on trip</p>
+    </div>
+    <div class="gallery-content">
+        <img src="./src/images/gallery1.jpg" alt="" class="gallery-content__img">
+        <img src="./src/images/gallery2.jpg" alt="" class="gallery-content__img">
+        <img src="./src/images/gallery3.jpg" alt="" class="gallery-content__img">
+        <img src="./src/images/gallery4.jpg" alt="" class="gallery-content__img">
+    </div>
+</section>
+
+<section class="testimonial">
+    <div class="testimonial-title">
+        <h2 class="testimonial-title__hdl">Traveler’s Experiences</h2>
+        <p class="testimonial-title__text">Here some awesome feedback from our travelers</p>
+    </div>
+    <div class="testimonial-content">
+        <div class="client">
+            <p class="client__text client__text-avatar1">But I must explain to you how all this mistaken idea of
+                denouncing pleasure and praising pain was born and I will give you a complete account of the system and
+                expound the actual teachings of the great explorer of the truth, the master- builder of human
+                happiness.</p>
+            <p class="client__name">John Doe</p>
+            <p class="client__profession">Accountant</p>
+        </div>
+        <div class="client">
+            <p class="client__text client__text-avatar2">But I must explain to you how all this mistaken idea of
+                denouncing pleasure and praising pain was born and I will give you a complete account of the system and
+                expound the actual teachings of the great explorer of the truth, the master- builder of human
+                happiness.</p>
+            <p class="client__name">John Smith</p>
+            <p class="client__profession">Journalist, HWO News</p>
+        </div>
+        <div class="client">
+            <p class="client__text client__text-avatar3">But I must explain to you how all this mistaken idea of
+                denouncing pleasure and praising pain was born and I will give you a complete account of the system and
+                expound the actual teachings of the great explorer of the truth, the master- builder of human
+                happiness.</p>
+            <p class="client__name">Tamara Bellis</p>
+            <p class="client__profession">Managing Director, JTH</p>
+        </div>
+    </div>
+</section>
+
+<section class="newsletter">
+    <div class="newsletter-title">
+        <p class="newsletter-title__text">Our Newsletter</p>
+        <div class="newsletter-box">
+            <div class="newsletter-email">
+                <label for="email" class="newsletter-email__lbl">Email</label>
+                <input type="email" id="email" class="newsletter-email__input" placeholder="Enter your email">
+            </div>
+            <button class="newsletter-btn">Subscribe</button>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <a href="" class="footer-logo__logo">
+                <img src="./src/images/logo.svg" alt="" class="footer-logo__img">
+            </a>
+            <p class="footer-logo__text">Copyright © Travellian 2020 All rights reserved</p>
+        </div>
+        <nav class="footer-menu">
+            <p class="footer-menu__text">Menu</p>
+            <a href="" class="footer-menu__link">Home</a>
+            <a href="" class="footer-menu__link">Explore</a>
+            <a href="" class="footer-menu__link">Travel</a>
+            <a href="" class="footer-menu__link">Blog</a>
+            <a href="" class="footer-menu__link">Pricing</a>
+        </nav>
+        <nav class="footer-information">
+            <p class="footer-information__text">Information</p>
+            <a href="" class="footer-information__link">Destinations</a>
+            <a href="" class="footer-information__link">Supports</a>
+            <a href="" class="footer-information__link">Terms & Conditions</a>
+            <a href="" class="footer-information__link">Privacy</a>
+        </nav>
+        <nav class="footer-contact">
+            <p class="footer-contact__text">Contact Info</p>
+            <a href="" class="footer-contact__link">+123 456 789</a>
+            <a href="" class="footer-contact__link">info@travellian.com</a>
+            <a href="" class="footer-contact__link">1245, New York, USA</a>
+        </nav>
+        <nav class="follow">
+            <p class="follow__text">Follow us on</p>
+            <div class="social-media">
+                <a href="" class="social-media__link">
+                    <img src="./src/images/facebook.svg" alt="" class="social-media__img">
+                </a>
+                <a href="" class="social-media__link">
+                    <img src="./src/images/pinterest.svg" alt="" class="social-media__img">
+                </a>
+                <a href="" class="social-media__link">
+                    <img src="./src/images/instagram.svg" alt="" class="social-media__img">
+                </a>
+                <a href="" class="social-media__link">
+                    <img src="./src/images/twitter.svg" alt="" class="social-media__img">
+                </a>
+            </div>
+        </nav>
+    </div>
+</footer>
 
 </body>
 </html>
